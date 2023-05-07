@@ -12,6 +12,8 @@ html {
     line-height: 1.5;
 }
 
+
+
 body {
     font-family: 'Inter', sans-serif;
 
@@ -30,18 +32,19 @@ header {
     flex-direction: row;
     align-items: center;
     margin: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
     justify-content: space-between;   
 }
+
 #navbar > * > * {
     transition: transform .2s;
     cursor: pointer;
 }
+
 #navbar > * > *:hover {
     transform: scale(1.1); 
 }
-
 
 #navleft {
     width: 32vw;
@@ -55,7 +58,7 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(media/stacked-waves-haikei.png);  
+    background-image: url(media/stacked-waves-haikei-7.svg);  
     background-size: cover;
 }
 
@@ -104,15 +107,18 @@ header {
     height:calc(100% - 8px);
     letter-spacing: 0.16em;
     color: #FFFFFF;
-    transition: transform .2s;
+    transition: .2s;
 }
 
 #join:hover {
-    
+    margin: 0;
+    height: 100%;
+    width: 8.4rem;
+    font-size: 1.8rem;
 }
 
-#blackline {
-    height: 15%;
+#marquee-setion {
+    height: 8rem;
     background-color: black;
     display: flex;
     justify-content: row;
@@ -135,6 +141,7 @@ header {
     min-width: 100%;
     height:100%;
     animation: marquee 15s linear infinite;
+    transform: 0.2s;
 }
 
 @keyframes marquee {
@@ -164,4 +171,35 @@ header {
     font-weight: 300;
     font-size: 1rem;
     letter-spacing: 0.25em;
+}
+
+#about-timetable {
+    background: linear-gradient(180deg, #3911A1 0%, #E8E8E8 30%, #E8E8E8 100%);
+}
+
+#about {
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#about h1{
+    font-weight: 500;
+    font-size: 3.2rem;
+    margin: 0.8rem;
+}
+
+#about-text {
+    max-width: 1000px;
+    line-height: 148.52%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    font-size: 1.6rem;;
+}
+#timetable {
+    height: 100vh;
 }
