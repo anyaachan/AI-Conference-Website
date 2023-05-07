@@ -174,11 +174,14 @@ header {
 }
 
 #about-timetable {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background: linear-gradient(180deg, #3911A1 0%, #E8E8E8 30%, #E8E8E8 100%);
 }
 
 #about {
-    height: 60vh;
+    height: 20rem;
     color: white;
     display: flex;
     flex-direction: column;
@@ -200,6 +203,34 @@ header {
     font-weight: 300;
     font-size: 1.6rem;;
 }
+
 #timetable {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
     height: 100vh;
+    overflow: scroll;
+}
+
+#box-scroll {
+    width: 650px;
+    height: 98%;
+    overflow: scroll;
+}
+
+#timetable-photo {
+    margin: 0.5rem;
+    height: 80%;
+    width: 550px;
+    border-radius: 60px;
+    background-image: url(media/space-1.jpg);
+    background-size: cover;
+}
+
+#timetable-box {
+    background-color: #FFFFFF;
+    height: 200%;
+    border-radius: 60px;
+    margin: 0.5rem;
 }
