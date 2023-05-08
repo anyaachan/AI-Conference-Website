@@ -219,19 +219,18 @@ header {
     align-items: flex-start;
     justify-content: center;
     height: 100vh;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #box-scroll {
-    width: 650px;
+    width: 38rem;
     height: 98%;
-    overflow: scroll;
 }
 
 #timetable-photo {
     margin: 0.5rem;
     height: 45rem;
-    width: 550px;
+    width: 32rem;
     border-radius: 60px;
     background-image: url(media/space-1.jpg);
     background-size: cover;
@@ -244,6 +243,56 @@ header {
     margin: 0.5rem;
 }
 
+#registration-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8E8E8;
+}
+
+.body-h1-text {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 85px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(93.51deg, #A620D3 1.27%, #4A9DEE 97.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 3rem;
+
+}
+
+#reg-text-box {
+    margin: 1rem;
+    background-color: #FFFFFF;
+    width: 70rem;
+    height: 12rem;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#reg-input-form {
+    display: flex;
+    flex-direction: row;
+}
+
+#reg-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-input-field {
+    border-radius: 60px;
+    background-color: #FFFFFF;
+
+}
+
+/* FOOTER */
 footer {
     background-color: #0B1E86;
     
