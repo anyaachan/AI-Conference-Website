@@ -282,30 +282,40 @@ header {
     align-items: center;
 }
 
-#reg-input-form {
+#reg-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: stretch;
     align-items: center;
-    height: 12rem;
+    height: 8rem;
     width: 70rem;
 }
 
-#reg-input {
+#reg-lines {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: stretch;
+    font-weight: 300;
+    flex-grow: 2;
     height: 100%;
+    color: #000000;
+    font-size: 1.1rem;
 }
 
 .reg-input-field {
     all: unset;
-    width: 44rem;
     border-radius: 60px;
     background-color: #FFFFFF;
-    height: 6rem;
-    padding: 2rem;
+    padding: 0 0 0 2rem;
+    flex-grow: 1;
+}
+
+.reg-input-field::placeholder {
+    opacity: 0.6;
+    color: #000000;
+
 }
 
 .reg-input-field.name {
@@ -316,13 +326,17 @@ header {
     margin: 0 1rem 0 0;
 }
 
-#reg-join {
+#reg-button {
     all: unset;
     cursor: pointer;
-    width: 20rem;
+    flex-grow: 1;
     height: 100%;
     background: linear-gradient(128.22deg, #B700FF -4.48%, #3A1EA0 102.5%);
     border-radius: 60px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
 }
 
 /* FOOTER */

@@ -23,7 +23,7 @@
             <h1 id="maintitle"> THE FUTURE IS NOW </h1>
             <div id="subtitle"> School of Media and IT Mini Conference in AI </div>
             <div id="joinfield">
-                <input type="email" placeholder="Your email address" id="joinemail"></input>
+                <input type="email" placeholder="Your email address" id="joinemail" pattern=".+@beststartupever\.com"></input>
                 <button id="join"> JOIN </button>
             </div>
         </div>
@@ -65,16 +65,16 @@
                 Leave your email!
             </div>
         </div>
-        <div id = "reg-input-form">
-            <div id = "reg-input">
-                <input type="email" placeholder="Your name" class="reg-input-field name"></input>
-                <input type="email" placeholder="Your email address" class="reg-input-field email"></input>
-            </div>
-            <button id = "reg-join">
-                <img>
-                <div>JOIN</div>
-            </button>
-        </div>
+            <form id = "reg-form" onsubmit="registrationSubmit(event)"> 
+                <div id = "reg-lines">
+                    <input type="text" placeholder="Your name" class="reg-input-field name"></input>
+                    <input type="email" placeholder="Your email address" class="reg-input-field email" pattern=".+@beststartupever\.com"></input>
+                </div>
+                <button id = "reg-button" type = "submit">
+                    <img>
+                    <div>Join</div>
+                </button>
+            </form>
     </section>
 
     <footer>
@@ -93,7 +93,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href = "https://www.instagram.com" target="_blank">
+                        <a href = "https://www.instagram.com/praguecityuniversity/" target="_blank">
                             <img src="media/insta-logo.png">
                         </a>
                     </li>
