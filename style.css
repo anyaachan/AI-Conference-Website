@@ -17,7 +17,11 @@ body {
 
 }
 
-
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
 
 header {
     height: 100vh;
@@ -240,15 +244,51 @@ header {
     margin: 0.5rem;
 }
 
-#footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+footer {
+    background-color: #0B1E86;
+    
 }
 
 #footer-content {
-    height: 5rem;
-    background-color: #0B1E86;
+    height: 6rem;
+    margin-top: -3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+#contacts {
+    font-weight: 300;
+    list-style-type: none;
+
+}
+
+#social-medias {
+    font-weight: 300;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#social-medias > * {
+    all: unset;
+    margin: 2rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#social-medias img {
+    object-fit: cover;
+    width: auto;
+    height: 3rem;
 }
 
 .wave-footer {
@@ -258,3 +298,11 @@ header {
     height: 20rem;
     background-image: url(media/layered-waves-haikei-2.svg);
 }
+
+#pcu-logo {
+    all: unset;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
