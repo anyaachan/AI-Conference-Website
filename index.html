@@ -65,12 +65,12 @@
                 Leave your email!
             </div>
         </div>
-            <form id = "reg-form" onsubmit="registrationSubmit(event)"> 
+            <form id = "reg-form"> 
                 <div id = "reg-lines">
-                    <input type="text" placeholder="Your name" class="reg-input-field name"></input>
-                    <input type="email" placeholder="Your email address" class="reg-input-field email" pattern=".+@beststartupever\.com"></input>
+                    <input type="text" placeholder="Your name" class="reg-input-field name" required></input>
+                    <input type="email" placeholder="Your email address" class="reg-input-field email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required></input>
                 </div>
-                <button id = "reg-button" type = "submit">
+                <button id="reg-button" type="submit">
                     <img>
                     <div>Join</div>
                 </button>
