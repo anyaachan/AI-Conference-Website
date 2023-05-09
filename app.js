@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     regForm.addEventListener("submit", (event) => {
       event.preventDefault();
       console.log()
-      let userDame = document.getElementsByClassName("reg-input-field")
-      console.log(userDame[0].value)
-      console.log(userDame[1].value)
+      let userDate = document.getElementsByClassName("reg-input-field")
+      console.log(userDate[0].value)
+      console.log(userDate[1].value)
+
     });
   });

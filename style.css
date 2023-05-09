@@ -23,6 +23,8 @@ img {
     height: auto;
 } 
 
+/* HEADER */
+
 header {
     height: 100vh;
     display: flex;
