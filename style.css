@@ -255,8 +255,25 @@ header {
 
 #map-section {
     background-color: #E8E8E8;
-    height: 64rem;    
+    height: 56rem;    
     display: flex;
+}
+
+.mapboxgl-canvas {
+    border-radius: 0 0 60px 60px;
+}
+
+.mapboxgl-ctrl-bottom-left {
+    padding-left: 2rem;
+}
+
+.mapboxgl-ctrl-bottom-right {
+    padding-right: 3rem;
+}
+
+.mapboxgl-ctrl-group button {
+    width: 29px;
+    height: 29px;
 }
 
 #map-box {
@@ -269,6 +286,7 @@ header {
     justify-content: space-between;
     align-content: stretch;
     border-radius: 60px;
+    overflow: hidden;
 }
 
 #map-text {
@@ -279,7 +297,7 @@ header {
 }
 
 #map {
-    flex-grow: 8;
+    flex-grow: 20;
 }
 
 .body-text {
@@ -300,7 +318,8 @@ header {
 
 .body-text.address {
     font-weight: 500;
-    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 60px;
 }
 
 
