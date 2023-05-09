@@ -18,9 +18,19 @@ document.addEventListener("DOMContentLoaded", function() {
     zoom: 14,
     style: "mapbox://styles/mapbox/light-v11"
 });
+
   map.addControl(new mapboxgl.NavigationControl()); 
   map.scrollZoom.disable(); 
 /* creating an instance in which we constructing the new map with some information given to help */
+  let marker = document.createElement('div');
+  marker.id = 'marker';
+/* document is a javascript name (object) for the page which has the method createElement. We assign the id. */
+
+  new mapboxgl.Marker(marker, {anchor: 'bottom'}) /*the marker is anchored at the bottom */ 
+    .setLngLat(loc)
+    .addTo(map)
+    .setPopup(popup); /* sets the popup to the marker */
+/* creates a new instance of a marker*/
 
   });
 

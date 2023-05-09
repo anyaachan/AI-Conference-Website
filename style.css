@@ -322,8 +322,12 @@ header {
     line-height: 60px;
 }
 
-
-
+#marker {
+    width: 70px;
+    height: 70px;
+    background-image: url(media/placeholder-2.png);
+    background-size: cover;
+}
 
 /* REGISTRATION */
 
