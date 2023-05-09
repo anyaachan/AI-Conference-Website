@@ -232,7 +232,7 @@ header {
 
 #box-scroll {
     width: 38rem;
-    height: 98%;
+    height: 96%;
 }
 
 #timetable-photo {
@@ -251,6 +251,63 @@ header {
     margin: 0.5rem;
 }
 
+/* MAP */
+
+#map-section {
+    background-color: #E8E8E8;
+    height: 64rem;    
+    display: flex;
+}
+
+#map-box {
+    background-color: #FFFFFF;
+    margin: auto;
+    width: 70rem;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+    border-radius: 60px;
+}
+
+#map-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#map {
+    flex-grow: 8;
+}
+
+.body-text {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(93.51deg, #A620D3 1.27%, #4A9DEE 97.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 3rem;
+}
+
+.body-text.h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 85px;
+}
+
+.body-text.address {
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+
+
+
+/* REGISTRATION */
+
 #registration-form {
     margin: auto;
     display: flex;
@@ -258,20 +315,6 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #E8E8E8;
-}
-
-.body-h1-text {
-    font-weight: 600;
-    font-size: 4rem;
-    line-height: 85px;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(93.51deg, #A620D3 1.27%, #4A9DEE 97.07%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin: 3rem;
-
 }
 
 #reg-text-box {
@@ -342,6 +385,7 @@ header {
 }
 
 /* FOOTER */
+
 footer {
     background-color: #0B1E86;
     
