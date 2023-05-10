@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
     .addTo(map)
     .setPopup(popup); /* sets the popup to the marker */
 /* creates a new instance of a marker*/
-
   });
 
 
