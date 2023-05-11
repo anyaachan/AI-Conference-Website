@@ -9,41 +9,40 @@
 <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 
 
+<header>
+    <div id = "rootmain">
+    <div id="navbar">
+        <div id ="navleft"> 
+            <div> EN </div>
+            <a href="#about"> ABOUT </a>
+            <a href="#timetable"> TIMETABLE </a>
+            <a href="#speakers-section"> SPEAKERS </a>
+        </div>
+        <div id = "navright"> 
+            <div> TICKETS</div> 
+        </div>
+    </div>
+    <div id="roottext">
+        <div id="description"> MAY 26 | 9AM-18PM | PRAGUE | IN PERSON </div>
+        <h1 id="maintitle"> THE FUTURE IS NOW </h1>
+        <div id="subtitle"> School of Media and IT Mini Conference in AI </div>
+        <div id="joinfield">
+            <input type="email" placeholder="Your email address" id="joinemail" pattern=".+@beststartupever\.com"></input>
+            <button id="join"> JOIN </button>
+        </div>
+    </div>
+</div>
+<div id = "marquee-setion">
+    <div class = "marquee">
+        <span>THE FUTURE IS NOW * PRAGUE CITY UNIVERSITY * </span>
+    </div>
+    <!-- <div class = "marquee" aria-hidden="true">
+        <span>THE FUTURE IS NOW * PRAGUE CITY UNIVERSITY * </span>
+    </div> -->
+</div>
+</header> 
+
 <main>
-    <header>
-        <div id = "rootmain">
-        <div id="navbar">
-            <div id ="navleft"> 
-                <div> EN </div>
-                <div> ABOUT </div>
-                <div> TIMETABLE </div>
-                <div> SPEAKERS </div>
-            </div>
-            <div id = "navright"> 
-                <div> TICKETS</div> 
-            </div>
-        </div>
-        <div id="roottext">
-            <div id="description"> MAY 26 | 9AM-18PM | PRAGUE | IN PERSON </div>
-            <h1 id="maintitle"> THE FUTURE IS NOW </h1>
-            <div id="subtitle"> School of Media and IT Mini Conference in AI </div>
-            <div id="joinfield">
-                <input type="email" placeholder="Your email address" id="joinemail" pattern=".+@beststartupever\.com"></input>
-                <button id="join"> JOIN </button>
-            </div>
-        </div>
-    </div>
-    <div id = "marquee-setion">
-        <div class = "marquee">
-            <span>THE FUTURE IS NOW * PRAGUE CITY UNIVERSITY * </span>
-        </div>
-        <div class = "marquee" aria-hidden="true">
-            <span>THE FUTURE IS NOW * PRAGUE CITY UNIVERSITY * </span>
-        </div>
-    </div>
-    </header> 
-
-
     <section id = "about-timetable-section">
         <section id = "about">
             <h1 id = "about-title">
@@ -54,19 +53,33 @@
             </div>
         </section>
         <section id = "timetable">
-            <div id = "timetable-photo">
-            </div>
-            <div id = "box-scroll">
-                <div id = "timetable-box">
+            <div id = timetable-holder>
+            <div class="holder">
+                <div id = "timetable-photo">
+                    <img src="media/space-1.jpg">
                 </div>
-            </div>  
+            </div>
+                <div id = "timetable-box">
+                    <div class = timetable-info>
+                        <div class = "timetable-time">
+                            8:00 A.M. - 9:00 A.M.
+                        </div>
+                        <div class = "body-text timetable">
+                            Doors open and registration
+                        </div>
+                        <div class = "description-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </section>
 
     <section id = "speakers-section">
         <div id = "speakers-box">
             <div id = "speakers-text">
-                <div class = "body-text h1">
+                <div class = "body-text map">
                     Meet our Speakers
                 </div>
                 <div class = "description-text">
@@ -109,39 +122,39 @@
                 </button>
             </form>
     </section>
-
-    <footer>
-            <div class = "wave-footer">
-            </div>
-            <div id = "footer-content">
-                <ul id = "contacts">
-                    <li>+420 000 000 00</li>
-                    <li>conference@praguecityuniversity.cz</li>
-                </ul>  
-
-                <ul id = "social-medias">
-                    <li>
-                        <a href = "https://www.youtube.com/channel/UCtJM41jXN0JSVFM2pxuAzGw" target="_blank">
-                            <img src="media/youtube-logo.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "https://www.instagram.com/praguecityuniversity/" target="_blank">
-                            <img src="media/insta-logo.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "https://www.linkedin.com/school/prague-city-university/" target="_blank">
-                            <img src="media/linkedin-logo.png">
-                        </a>
-                    </li>
-                </ul> 
-
-                <div id = "pcu-logo">
-                    <a href = "https://www.praguecityuniversity.cz" target="_blank">
-                        <img src="media/pcu-logo.png">
-                    </a>
-                </div>
-            </div>
-    </footer>
 </main>
+
+<footer>
+        <div class = "wave-footer">
+        </div>
+        <div id = "footer-content">
+            <ul id = "contacts">
+                <li>+420 000 000 00</li>
+                <li>conference@praguecityuniversity.cz</li>
+            </ul>  
+
+            <ul id = "social-medias">
+                <li>
+                    <a href = "https://www.youtube.com/channel/UCtJM41jXN0JSVFM2pxuAzGw" target="_blank">
+                        <img src="media/youtube-logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://www.instagram.com/praguecityuniversity/" target="_blank">
+                        <img src="media/insta-logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://www.linkedin.com/school/prague-city-university/" target="_blank">
+                        <img src="media/linkedin-logo.png">
+                    </a>
+                </li>
+            </ul> 
+
+            <div id = "pcu-logo">
+                <a href = "https://www.praguecityuniversity.cz" target="_blank">
+                    <img src="media/pcu-logo.png">
+                </a>
+            </div>
+        </div>
+</footer>
