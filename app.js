@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       time: '11:30 A.M. - 12:30 A.M.',
       title: 'Workshop 1: Developing AI Algorithms',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
     },
     {
       time: '12:30 A.M. - 1:30 P.M.',
       title: 'Lunch',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco'
     },
     {
       time: '1:30 P.M. - 2:30 P.M.',
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       time: '3:30 P.M. - 4:30 P.M.',
       title: 'Workshop 2: Implementing AI in Business',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
     },
     {
       time: '4:30 P.M. - 5:30 P.M.',
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (index !== events.length - 1) {
         eventHTML += `<hr class="hr-gradient">`;
       }
-      
+
       timetable.innerHTML += eventHTML;
     });
   }
