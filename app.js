@@ -68,6 +68,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   ];
 
+  let speakers = [
+    {
+      image: "media/speaker-01.jpg",
+      name: "Lorem Ipsum",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
+    },
+    {
+      image: "media/speaker-02.jpg",
+      name: "Lorem Ipsum",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
+    },
+    {
+      image: "media/speaker-03",
+      name: "Lorem Ipsum",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
+    },
+  ];
+
   function createTimetable(events) {
     let timetable = document.getElementById('timetable-box');
     events.forEach((event, index) => {
@@ -92,6 +110,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   createTimetable(events);
+
+  function createSpeakers(speakers) {
+    let speakersGrid = document.getElementById('speakers-grid');
+    speakers.forEach((speaker) => {
+      let eventHTML = `
+        <div class = "speaker-box-gradient" >
+          <div class="speaker-box">
+            <img src = "${speaker.image}">
+              <p class="body-text speaker">${speaker.name}</p>
+              <p class="description-text speaker">${speaker.description}</p>
+          </div>
+        </div >`;
+        speakersGrid.innerHTML += eventHTML;
+    });
+  }
+
+  createSpeakers(speakers);
 
   let loc = [14.433824581541954, 50.08703265602295]
   mapboxgl.accessToken = 'pk.eyJ1IjoiYW55YWFjaGFuIiwiYSI6ImNsZmdvYTNpMDA1ZmQzdnJzMnhma2xybXkifQ.x3AS6_WhkUlar_9LvRunWA';
