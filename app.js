@@ -70,20 +70,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function createTimetable(events) {
     let timetable = document.getElementById('timetable-box');
-    events.forEach(event => {
+    events.forEach((event, index) => {
       let eventHTML = `
-                  <div class="timetable-time">
-                      <div class="body-text time">
-                          ${event.time}
-                      </div>
-                  </div>
-                  <div class="body-text timetable">
-                      ${event.title}
-                  </div>
-                  <div class="description-text timetable">
-                      ${event.description}
-                  </div>
-                  <hr class="hr-gradient">`;
+            <div class="timetable-time">
+                <div class="body-text time">
+                    ${event.time}
+                </div>
+            </div>
+            <div class="body-text timetable">
+                ${event.title}
+            </div>
+            <div class="description-text timetable">
+                ${event.description}
+            </div>`;
+      if (index !== events.length - 1) {
+        eventHTML += `<hr class="hr-gradient">`;
+      }
+      
       timetable.innerHTML += eventHTML;
     });
   }
