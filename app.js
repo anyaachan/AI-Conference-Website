@@ -71,17 +71,27 @@ document.addEventListener("DOMContentLoaded", function () {
   let speakers = [
     {
       image: "media/speaker-01.jpg",
-      name: "Lorem Ipsum",
+      name: "Mark Anderson",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
     },
     {
       image: "media/speaker-02.jpg",
-      name: "Lorem Ipsum",
+      name: "Rebecca Jones",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
     },
     {
-      image: "media/speaker-03",
-      name: "Lorem Ipsum",
+      image: "media/speaker-03.jpg",
+      name: "Jennifer Williams",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      image: "media/speaker-04.jpg",
+      name: "Andrew Smith",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
+    },
+    {
+      image: "media/speaker-05.jpg",
+      name: "Sarah Johnson",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
     },
   ];

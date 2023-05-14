@@ -354,14 +354,16 @@ header {
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
 
 .body-text.speaker {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 500;
+    line-height: 48px;
+
 }
 
 .description-text.speaker {
