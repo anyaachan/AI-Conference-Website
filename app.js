@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     let userData = document.getElementsByClassName("reg-input-field")
 
+    userData[0].value = ""
+    userData[1].value = ""
   });
 
 
