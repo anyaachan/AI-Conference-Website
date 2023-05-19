@@ -1,12 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('app', () => ({ //the arrow is instead the word function
+        txt: "", //creating a variable
+
+        markdown() { //creating a method
+          return this.txt;
+      },
+    })); 
+  });     
+
   let regForm = document.getElementById("reg-form");
 
   regForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    let userData = document.getElementsByClassName("reg-input-field")
+
+    let formData = new FormData();
+
+    formData.append("name", userData[0].value);
+    formData.append("email", userData[1].value);
+
+  });
+
+  let emailForm = document.getElementById("joinfield");
+
+  emailForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let userData = document.getElementsById("joinemail")
     console.log()
-    let userDate = document.getElementsByClassName("reg-input-field")
-    console.log(userDate[0].value)
-    console.log(userDate[1].value)
 
   });
 
@@ -159,6 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .addTo(map)
     .setPopup(popup); /* sets the popup to the marker */
   /* creates a new instance of a marker*/
+
 });
 
 
