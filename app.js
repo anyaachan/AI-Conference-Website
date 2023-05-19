@@ -1,13 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.addEventListener('alpine:init', () => {
-    Alpine.data('app', () => ({ //the arrow is instead the word function
-        txt: "", //creating a variable
+  let emailForm = document.getElementById("joinfield");
 
-        markdown() { //creating a method
-          return this.txt;
-      },
-    })); 
-  });     
+  emailForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let userEmail = document.getElementById("joinemail").value;
+    let userEmailReg = document.getElementById("reg-input-field-email");
+    
+    // console.log(userEmail)
+    // console.log(userEmailReg)
+
+    userEmailReg.value = userEmail
+    userEmailReg.scrollIntoView({ behavior: "smooth" });
+  });
 
   let regForm = document.getElementById("reg-form");
 
@@ -15,21 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     let userData = document.getElementsByClassName("reg-input-field")
 
-    let formData = new FormData();
-
-    formData.append("name", userData[0].value);
-    formData.append("email", userData[1].value);
-
   });
 
-  let emailForm = document.getElementById("joinfield");
-
-  emailForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    let userData = document.getElementsById("joinemail")
-    console.log()
-
-  });
 
   let events = [
     {
@@ -178,9 +169,6 @@ document.addEventListener("DOMContentLoaded", function () {
   new mapboxgl.Marker(marker, { anchor: 'bottom' }) /*the marker is anchored at the bottom */
     .setLngLat(loc)
     .addTo(map)
-    .setPopup(popup); /* sets the popup to the marker */
-  /* creates a new instance of a marker*/
-
 });
 
 
