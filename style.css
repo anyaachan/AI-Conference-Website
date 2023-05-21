@@ -333,6 +333,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #speakers-text {
@@ -354,6 +355,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2.4rem;
     margin: 0rem 3rem 2rem 3rem;
+
 }
 
 #speakers-grid img {
@@ -367,6 +369,7 @@ main {
     background: linear-gradient(93.51deg, #A620D3 1.27%, #4A9DEE 97.07%);
     border-radius: 60px;
     padding: 0.3rem;
+    width: 100%;
 }
 
 .speaker-box {
@@ -624,7 +627,6 @@ footer {
     width: 15rem;
 }
 
-
 #social-medias {
     font-weight: 300;
     height: 100%;
@@ -665,7 +667,6 @@ footer {
 
 @media (max-width: 1400px) {
     #speakers-grid {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2.4rem;
         margin: 0rem 3rem 2rem 3rem;
@@ -705,7 +706,7 @@ footer {
 
 @media (max-width: 1000px) {
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 #speakers-grid {
     grid-template-columns: 1fr;
@@ -734,11 +735,62 @@ html {
 }
 .body-text.h1 {
     font-weight: 600;
-    font-size: 3rem;
-    line-height: 5rem;
-    margin: 2rem 0 2rem 0;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin: 2rem 3rem 2rem 3rem;
 }
-#reg-text-box {
-    width: 90%;
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    justify-content: space-between;   
+}
+
+#reg-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+#reg-button {
+    height: 100%;
+    width: calc(100% - 4rem);
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+#reg-lines {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    flex-grow: 0;
+    width: calc(100% - 4rem);
+}
+.reg-input-field {
+    all: unset;
+    border-radius: 60px;
+    background-color: #FFFFFF;
+    padding: 0 1rem 0 1rem;
+    flex-grow: 0;
+    height: 4rem;
+}
+.reg-input-field.name {
+    margin: 0 0 1.2rem 0;
+}
+
+.reg-input-field.email {
+    margin: 0 0 1rem 0;
 }
 }
