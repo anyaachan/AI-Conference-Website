@@ -16,13 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
   let regForm = document.getElementById("reg-form");
 
   regForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    let userData = document.getElementsByClassName("reg-input-field")
+  event.preventDefault();
+  var regMessage = document.getElementById("reg-message");
+  let userData = document.getElementsByClassName("reg-input-field")
+  
+  console.log(userData[0].value)
+  console.log(userData[1].value)
 
-    console.log(userData[0].value)
-    console.log(userData[1].value)
+  regMessage.innerHTML = "Thank you for registering!";
 
-    document.getElementById("reg-message").style.visibility= "visible" ;
+  regMessage.style.visibility = "visible";
+  regMessage.style.opacity = "1";
+
+  setTimeout(function() {
+    regMessage.style.opacity = "0";
+    setTimeout(function() {
+      regMessage.style.visibility = "hidden";
+    }, 500);
+  }, 5000);
 
     userData[0].value = ""
     userData[1].value = ""
@@ -177,5 +188,3 @@ document.addEventListener("DOMContentLoaded", function () {
     .setLngLat(loc)
     .addTo(map)
 });
-
-
