@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     let userData = document.getElementsByClassName("reg-input-field")
 
+    console.log(userData[0].value)
+    console.log(userData[1].value)
+
+    document.getElementById("reg-message").style.visibility= "visible" ;
+
     userData[0].value = ""
     userData[1].value = ""
   });

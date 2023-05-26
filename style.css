@@ -599,6 +599,17 @@ main {
     transform: scale(1.2);
 }
 
+#reg-message {
+    background: linear-gradient(93.51deg, #A620D3 1.27%, #4A9DEE 97.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.2rem;
+    letter-spacing: 0.12rem;
+    transition: 0.2s;
+    visibility: hidden;
+}
+
 
 /* FOOTER */
 
@@ -732,7 +743,9 @@ html {
 
 #social-medias > * {
     margin: 1.5rem;
+    transition: .2s;
 }
+
 .body-text.h1 {
     font-weight: 600;
     font-size: 3.2rem;
