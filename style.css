@@ -43,7 +43,7 @@ header {
     flex-direction: row;
     align-items: center;
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     justify-content: space-between;   
 }
@@ -72,7 +72,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
-    gap: 2.5rem;    
+    gap: 3rem;    
 }
 
 #rootmain {
@@ -474,7 +474,7 @@ main {
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.2rem;
-    margin: 1rem 0rem 2rem 3rem;
+    margin: 1rem 3rem 2rem 3rem;
 }
 
 #marker {
@@ -517,7 +517,7 @@ main {
 }
 
 #reg-text-box {
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 0 2rem 0rem 2rem;
     width: calc(100% - 4rem);
     background-color: #FFFFFF;
     border-radius: 60px;
@@ -606,6 +606,7 @@ main {
     background-clip: text;
     font-size: 1.2rem;
     letter-spacing: 0.12rem;
+    visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s ease;
 }
@@ -676,6 +677,8 @@ footer {
     width: 15rem;
 }
 
+
+
 @media (max-width: 1400px) {
     #speakers-grid {
         grid-template-columns: 1fr 1fr;
@@ -705,6 +708,15 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        justify-content: space-between;   
     }
     #social-medias {
         margin: auto;
@@ -753,15 +765,7 @@ html {
     margin: 2rem 3rem 2rem 3rem;
 }
 
-#navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 1rem;
-    font-size: 1.2rem;
-    font-weight: 300;
-    justify-content: space-between;   
-}
+
 
 #reg-form {
     flex-direction: column;
@@ -804,6 +808,22 @@ html {
 }
 
 .reg-input-field.email {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0rem 0;
 }
+#reg-button {
+    border-radius: 4px;
+}
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        gap: 1rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        justify-content: center;   
+    }
 }
