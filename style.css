@@ -281,7 +281,7 @@ main {
     background-color: #E8E8E8;
     border-radius: 4rem;
     display: inline-block;
-    line-height: 29px;
+    line-height: 2rem;
     padding: 0.8rem 1.2rem 0.8rem 1.2rem;
     font-weight: 400;
     font-size: 1.2rem;
@@ -301,7 +301,7 @@ main {
 .body-text.timetable {
     font-weight: 600;
     font-size: 2.4rem;
-    line-height: 51px;
+    line-height: 2.8rem;
     margin: 1rem 2rem 0rem 2rem;
 }
 
@@ -589,6 +589,7 @@ main {
 
 #reg-button svg {
     margin: 0.2rem;
+    margin-top: 0.5rem;
     max-width: 3rem;
     max-height: 3rem;
     fill: white;
@@ -597,6 +598,7 @@ main {
 
 #reg-button div {
     transition: 0.3s;
+    margin-bottom: 0.5rem;
 }
 
 #reg-button:hover{
@@ -688,6 +690,9 @@ footer {
 
 
 @media (max-width: 1400px) {
+    html {
+        font-size: 16px;
+    }
     #speakers-grid {
         grid-template-columns: 1fr 1fr;
         gap: 2.4rem;
@@ -860,5 +865,5 @@ html {
     html {
         font-size: 10px;
     }
-
+    
 }
