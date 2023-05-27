@@ -260,7 +260,7 @@ main {
 #timetable-photo {
     height: 48rem;
     width: 32rem;
-    border-radius: 60px;
+    border-radius: 4rem;
     margin-top: 1rem;
     overflow: hidden;
 }
@@ -273,13 +273,13 @@ main {
 #timetable-box {
     background-color: #FFFFFF;
     flex-grow: 1;
-    border-radius: 60px;
+    border-radius: 4rem;
     margin: 1.5rem 0rem 0.5rem 0.5rem;
 }
 
 .timetable-time {
     background-color: #E8E8E8;
-    border-radius: 60px;
+    border-radius: 4rem;
     display: inline-block;
     line-height: 29px;
     padding: 0.8rem 1.2rem 0.8rem 1.2rem;
@@ -325,7 +325,7 @@ main {
     height: 96%;
     width: 70rem;
     background-color: white;
-    border-radius: 60px;
+    border-radius: 4rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -367,7 +367,7 @@ main {
 
 .speaker-box-gradient {
     background: linear-gradient(93.51deg, #A620D3 1.27%, #4A9DEE 97.07%);
-    border-radius: 60px;
+    border-radius: 4rem;
     padding: 0.3rem;
     width: 100%;
 }
@@ -375,7 +375,7 @@ main {
 .speaker-box {
     height: 100%;
     width: 100%;
-    border-radius: 55px;
+    border-radius: 3.8rem;
     background-color: #FFF;
     display: flex;
     flex-direction: column;
@@ -408,7 +408,7 @@ main {
 }
 
 .mapboxgl-canvas {
-    border-radius: 0 0 60px 60px;
+    border-radius: 0 0 4rem 4rem;
 }
 
 .mapboxgl-ctrl-bottom-left {
@@ -433,7 +433,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-content: stretch;
-    border-radius: 60px;
+    border-radius: 4rem;
     overflow: hidden;
 }
 
@@ -528,7 +528,7 @@ main {
     margin: 0 2rem 0rem 2rem;
     width: calc(100% - 4rem);
     background-color: #FFFFFF;
-    border-radius: 60px;
+    border-radius: 4rem;
     display: flex;
     align-items: center;
 }
@@ -548,7 +548,7 @@ main {
 
 .reg-input-field {
     all: unset;
-    border-radius: 60px;
+    border-radius: 4rem;
     background-color: #FFFFFF;
     padding: 0 2rem 0 2rem;
     flex-grow: 1;
@@ -574,7 +574,7 @@ main {
     flex-grow: 1;
     height: 100%;
     background-color: #6216cd;
-    border-radius: 60px;
+    border-radius: 4rem;
     color: white;
     font-weight: 500;
     text-align: center;
@@ -696,7 +696,7 @@ footer {
     #timetable-photo {
         height: 38rem;
         width: 26rem;
-        border-radius: 60px;
+        border-radius: 4rem;
         margin-top: 1rem;
         overflow: hidden;
     }
@@ -805,7 +805,7 @@ html {
 }
 .reg-input-field {
     all: unset;
-    border-radius: 60px;
+    border-radius: 4rem;
     background-color: #FFFFFF;
     padding: 0 1rem 0 1rem;
     flex-grow: 0;
@@ -822,6 +822,15 @@ html {
     border-radius: 45px;
 }
 }
+@media (max-width: 800px) {   
+    #joinfield {
+        width: 70%;
+    }
+
+    #joinemail {
+        width: 80%;
+    }
+}
 
 @media (max-width: 600px) {
     #navbar {
@@ -834,4 +843,22 @@ html {
         font-weight: 300;
         justify-content: center;   
     }
+    html {
+        font-size: 10px;
+    }
+    
+    #joinfield {
+        width: 80%;
+    }
+
+    #joinemail {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+
 }
